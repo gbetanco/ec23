@@ -1,10 +1,19 @@
-- ec2:
-    key_name: containers
-    group: demo
-    instance_type: t2.micro
-    image:  ami-9e2f0988
-    wait: yes
-    wait_timeout: 500
-    monitoring: yes
-    vpc_subnet_id: subnet-ea512b8f
-    assign_public_ip: yes	
+---
+-
+  connection: local
+  hosts: all
+  tasks:
+    -
+      action:
+        group: SeGB
+        image: ami-22ce4934
+        instance_tags:
+          OWNER: GB
+          name: ANSIGB
+        instance_type: t2.micro
+        key_name: keypairfugue
+        module: ec2
+        region: us-east-1
+        state: present
+        vpc_subnet_id: subnet-ea512b8f
+      name: "create ec2 instance"

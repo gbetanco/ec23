@@ -11,7 +11,7 @@
           OWNER: GB
           name: NEWGB
         instance_type: t2.micro
-        key_name: Containers
+        key_name: containers
         module: ec2
         region: us-east-1
         state: present

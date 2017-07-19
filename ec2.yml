@@ -7,5 +7,4 @@
     wait_timeout: 500
     monitoring: yes
     vpc_subnet_id: subnet-ea512b8f
-    assign_public_ip: yes
-	
+    assign_public_ip: yes	

@@ -5,7 +5,7 @@
   tasks:
     -
       action:
-        group: SeGB
+        group: default
         image: ami-9e2f0988
         instance_tags:
           OWNER: GB

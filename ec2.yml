@@ -6,12 +6,12 @@
     -
       action:
         group: SeGB
-        image: ami-22ce4934
+        image: ami-9e2f0988
         instance_tags:
           OWNER: GB
-          name: ANSIGB
+          name: NEWGB
         instance_type: t2.micro
-        key_name: keypairfugue
+        key_name: Containers
         module: ec2
         region: us-east-1
         state: present
